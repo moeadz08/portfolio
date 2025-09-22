@@ -6,13 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Blog!</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="blog-style.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 
     <style>
         h1 {
             display: flex;
             margin: 0;
-            margin-top: 2rem;
+            margin-top: 4rem;
             justify-content: center;
             text-align: center;
             font-size: 56px;
@@ -24,32 +25,23 @@
             text-decoration: none;
         }
         
-        .angkot img {
-            overflow: hidden;
-        }
-        
-        .angkot {
-            margin-top: 2rem;
-        }
-        
-        .post-1 ul.post-info li {
-            margin-top: -15px;
-            display: inline-block;
-            margin-left: -11px;
-        }
-        
-        .post-1 {
-            margin-top: 0px;
-            margin-left: 25px;
-        }
-        
-        article {
+        .post-info {
+            list-style: none;
+            /* hilangkan bullet bawaan */
+            padding: 0;
+            margin: 0;
             display: flex;
-            align-items: center;
+            /* biar item sejajar horizontal */
+            gap: 8px;
         }
         
-        .kategori h4 {
-            margin-bottom: 1px;
+        li {
+            /* gap: 12px; */
+            font-size: small;
+        }
+        
+        h4 {
+            margin-bottom: 0;
         }
     </style>
 </head>
@@ -68,23 +60,49 @@
     </header>
     <main>
         <h1>Blog</h1>
-        <div>
-            <article>
-                <div class="angkot">
-                    <img src="https://www.thoughtco.com/thmb/IxgejIxr89fakxJm5a9E1EpwyDw=/750x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/GettyImages-556712867-58e85b223df78c51620400d4.jpg" alt="Gambar Mobil Taksi ">
-                </div>
-                <div class="post-1 ">
-                    <span class="kategori">Lifestyle</span>
-                    <a href="detail-blog.html">
-                        <h4>Tips Naik Angkot untuk Pemula</h4>
-                    </a>
-                    <ul class="post-info">
-                        <li><a href="# ">Mu'adz Jundyurrahman</a></li>
-                        <li><a href="# ">Sep 15, 2025</a></li>
-                        <li><a href="# ">12 Comments</a></li>
-                    </ul>
-                </div>
-            </article>
+        <div class="project-gallery">
+            <div class="card">
+                <img src="assets/yellow-black-sign-taxi-placed-top-car-night.jpg" alt="Taxi">
+                <a href="detail-blog.html">
+                    <h4>Cara Naik Taxi untuk Pemula</h4>
+                </a>
+                <ul class="post-info">
+                    <li><a href="# ">Sep 15, 2025</a></li>
+                    <li><a href="# ">12 Comments</a></li>
+                </ul>
+            </div>
+            <div class="card">
+                <img src="assets/yellow-black-sign-taxi-placed-top-car-night.jpg" alt="Taxi">
+                <a href="detail-blog.html">
+                    <h4>Cara Naik Taxi untuk Pemula</h4>
+                </a>
+                <ul class="post-info">
+                    <li><a href="# ">Sep 15, 2025</a></li>
+                    <li><a href="# ">12 Comments</a></li>
+                </ul>
+            </div>
+            <div class="card">
+                <img src="assets/yellow-black-sign-taxi-placed-top-car-night.jpg" alt="Taxi">
+                <a href="detail-blog.html">
+                    <h4>Cara Naik Taxi untuk Pemula</h4>
+                </a>
+                <ul class="post-info">
+                    <li><a href="# ">Sep 15, 2025</a></li>
+                    <li><a href="# ">12 Comments</a></li>
+                </ul>
+            </div>
+            <div class="card">
+                <h4>Proyek 4</h4>
+                <p>Deskripsi singkat...</p>
+            </div>
+            <div class="card">
+                <h4>Proyek 5</h4>
+                <p>Deskripsi singkat...</p>
+            </div>
+            <div class="card">
+                <h4>Proyek 6</h4>
+                <p>Deskripsi singkat...</p>
+            </div>
         </div>
     </main>
     <footer>
@@ -94,7 +112,7 @@
             <a href="# "><i class='bx bxl-linkedin'></i></a>
         </div>
         <div class="copyright ">
-            <p>&copy; 2025 Mu'adz Jundyurrahman</p>
+            <span>&copy; 2025 Mu'adz Jundyurrahman</span>
         </div>
     </footer>
 </body>

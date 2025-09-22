@@ -4,26 +4,46 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
+    /* border: 1px solid black; */
     /* font-weight: bold; */
 }
 
 .header {
-    position: relative;
-    top: 0;
-    left: 0;
-    width: 100%;
-    padding: 20px 10%;
-    background: transparent;
     display: flex;
+    position: relative;
+    /* top: 0;
+    left: 0; */
+    /* width: 100%; */
+    padding: 15px 25px;
+    background: yellow;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     justify-content: space-between;
     align-items: center;
-    z-index: 100;
+    /* z-index: 100; */
     /* font-weight: bold; */
 }
 
-.home {
-    /* display: flex; */
-    margin-top: 7rem;
+.navbar a {
+    color: #081b29;
+    font-size: 18px;
+    font-weight: 500;
+    /* margin-left: 35px; */
+    text-decoration: none;
+    transition: .3s;
+    /* gap: 20px; */
+}
+
+.navbar a:hover,
+.navbar a.active {
+    color: #547792;
+}
+
+.logo {
+    /* position: relative; */
+    color: #081b29;
+    font-size: 2em;
+    font-weight: 600;
+    text-decoration: none;
 }
 
 img {
@@ -36,31 +56,9 @@ img {
 body {
     font-family: Arial, sans-serif;
     margin: 40px;
-    background: #ECEFCA;
-    color: #081b29;
+    background-color: #ffd166;
+    /* color: #081b29; */
     line-height: 1.6;
-}
-
-.logo {
-    position: relative;
-    color: #081b29;
-    font-size: 25px;
-    font-weight: 600;
-    text-decoration: none;
-}
-
-.navbar a {
-    color: #081b29;
-    font-size: 18px;
-    font-weight: 500;
-    margin-left: 35px;
-    text-decoration: none;
-    transition: .3s;
-}
-
-.navbar a:hover,
-.navbar a.active {
-    color: #547792;
 }
 
 .home {
@@ -73,12 +71,12 @@ body {
     font-size: 56px;
     font-weight: 700;
     line-height: 1.2;
+    color: navy;
 }
 
 .footer {
     display: flex;
-    /* margin-top: 10rem; */
-    margin-bottom: 0px;
+    /* border-radius: 30px; */
 }
 
 .home-sci {
@@ -98,12 +96,106 @@ body {
     margin-bottom: 1px;
 }
 
-.copyright p {
+.copyright span {
     display: flex;
-    margin-top: 10px;
+    margin-top: 1px;
     font-size: 85%;
     /* border: 1px solid black; */
     align-items: center;
     justify-content: center;
     margin-bottom: 5px;
+}
+
+p,
+h2 {
+    color: darkslateblue;
+}
+
+.kartu-profil {
+    width: 300px;
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    border: 1px solid #eee;
+    border-radius: 10px;
+    /* margin: 50px; */
+    text-align: center;
+}
+
+.kartu-profil img {
+    height: 100px;
+    width: 100px;
+}
+
+.atas-dalem {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-container {
+    margin-top: 10rem;
+    display: flex;
+    /* justify-content: space-around; */
+    /* align-items: center; */
+    gap: 100px;
+    background-color: #f4f4f4;
+    padding: 40px;
+    border-radius: 10px;
+}
+
+.card-container .card {
+    width: 250px;
+    height: 350px;
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    /* padding: 20px; */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.project-gallery .card {
+    display: flex;
+    flex-direction: column;
+    /* susun elemen ke bawah */
+    gap: 1px;
+    width: 300px;
+    height: 350px;
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding-top: 15px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.project-gallery .card img {
+    width: 250px;
+    height: 200px;
+    justify-content: center;
+    border-radius: 10px;
+}
+
+.card-container .card img {
+    width: 200px;
+    height: 200px;
+    justify-content: center;
+    border-radius: 10px;
+}
+
+.project-gallery {
+    display: grid;
+    margin-top: 2rem;
+    /* Buat 3 kolom yang sama besar */
+    /* grid-template-columns: repeat(3, 1fr); */
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 0px;
+    padding: 2px;
+    justify-items: center;
+    border-radius: 10px;
 }
