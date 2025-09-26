@@ -1,36 +1,33 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 * {
-    margin: 15px;
-    padding: 0;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
-    /* border: 1px solid black; */
-    /* font-weight: bold; */
 }
+
+
+/* Header */
 
 .header {
     display: flex;
     position: relative;
-    /* top: 0;
-    left: 0; */
-    /* width: 100%; */
     padding: 15px 25px;
     background: yellow;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     justify-content: space-between;
+}
+
+.navbar {
+    display: flex;
+    gap: 30px;
     align-items: center;
-    /* z-index: 100; */
-    /* font-weight: bold; */
 }
 
 .navbar a {
     color: #081b29;
     font-size: 18px;
     font-weight: 500;
-    /* margin-left: 35px; */
     text-decoration: none;
     transition: .3s;
-    /* gap: 20px; */
 }
 
 .navbar a:hover,
@@ -46,7 +43,14 @@
     text-decoration: none;
 }
 
-img {
+.resep img {
+    width: 450px;
+    /* atur lebar */
+    height: auto;
+    /* tinggi menyesuaikan */
+}
+
+.imgfav img {
     width: 450px;
     /* atur lebar */
     height: auto;
@@ -61,22 +65,11 @@ body {
     line-height: 1.6;
 }
 
-.home {
-    display: flex;
-    margin-top: 2rem;
-}
 
-.home-content h1 {
-    position: relative;
-    font-size: 56px;
-    font-weight: 700;
-    line-height: 1.2;
-    color: navy;
-}
+/* Footer Items */
 
-.footer {
-    display: flex;
-    /* border-radius: 30px; */
+footer {
+    margin-top: 5rem;
 }
 
 .home-sci {
@@ -84,7 +77,6 @@ body {
     justify-content: center;
     gap: 30px;
     margin-bottom: 1px;
-    margin-top: 10rem;
     /* flex-direction: ; */
 }
 
@@ -111,6 +103,61 @@ h2 {
     color: darkslateblue;
 }
 
+
+/* Index App - Atas kiri */
+
+.big-home {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    margin: 20px auto;
+    max-width: 90%;
+}
+
+.home {
+    display: flex;
+    margin-top: 2rem;
+}
+
+.home-content {
+    margin-right: 0;
+}
+
+.home-content h1 {
+    margin: 0;
+    position: relative;
+    font-size: 60px;
+    line-height: 1.2;
+    color: navy;
+    max-width: 90%;
+}
+
+.home-content h3 {
+    position: relative;
+    font-size: 32px;
+    font-weight: 700;
+    color: #081b29;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.home-content p {
+    margin-top: 0px;
+}
+
+.btn-box a {
+    text-decoration: none;
+    color: #3b5998;
+}
+
+.btn-box a:hover {
+    text-decoration: underline;
+}
+
+
+/* Index App - Kartu atas */
+
 .kartu-profil {
     width: 300px;
     background-color: white;
@@ -118,84 +165,196 @@ h2 {
     padding: 20px;
     border: 1px solid #eee;
     border-radius: 10px;
-    /* margin: 50px; */
+    margin: 1px;
     text-align: center;
 }
 
 .kartu-profil img {
-    height: 100px;
-    width: 100px;
+    padding: 5px;
+    max-width: 100%;
+    border-radius: 10px;
+    box-sizing: border-box;
 }
 
-.atas-dalem {
-    display: flex;
-    justify-content: center;
+
+/* Index App - Kartu Bawah */
+
+.card-container .card-home img {
+    max-width: 100%;
+    padding: 20px;
+    border-radius: 30px;
+    box-sizing: border-box;
+}
+
+.card-container .card-home {
+    padding: 2px;
     align-items: center;
+    text-align: center;
+    background: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    justify-content: center;
+    border-radius: 10px;
 }
 
 .card-container {
-    margin-top: 10rem;
+    max-width: 85%;
+    margin: 10rem auto;
     display: flex;
-    /* justify-content: space-around; */
-    /* align-items: center; */
-    gap: 100px;
+    gap: 40px;
     background-color: #f4f4f4;
-    padding: 40px;
+    padding: 30px;
     border-radius: 10px;
 }
 
-.card-container .card {
-    width: 250px;
-    height: 350px;
-    background-color: white;
-    border: 1px solid #ddd;
-    border-radius: 10px;
-    /* padding: 20px; */
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    justify-content: center;
-    align-items: center;
-    text-align: center;
+.text-card h3 {
+    margin: 0;
+}
+
+.text-card p {
+    margin-top: 10px;
+}
+
+
+/* Hobby */
+
+.great-hobby {
+    display: flex;
+    margin-top: 2rem;
+}
+
+.big-hobby h1 {
+    position: relative;
+    font-size: 56px;
+    font-weight: 700;
+    line-height: 1.2;
+    color: navy;
+}
+
+.hobby img {
+    width: 450px;
+    /* atur lebar */
+    height: auto;
+    /* tinggi menyesuaikan */
+}
+
+
+/* Blog App */
+
+.project-gallery {
+    max-width: 85%;
+    margin: 2rem auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    padding: 20px;
+    justify-items: center;
+    border-radius: 20px;
+    row-gap: 80px;
 }
 
 .project-gallery .card {
-    display: flex;
+    /* display: flex; */
     flex-direction: column;
-    /* susun elemen ke bawah */
-    gap: 1px;
-    width: 300px;
-    height: 350px;
     background-color: white;
-    border: 1px solid #ddd;
-    border-radius: 10px;
-    padding-top: 15px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    /* border-radius: 15px; */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
     justify-content: center;
-    align-items: center;
     text-align: center;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    /* padding: 15px; */
+}
+
+.project-gallery .card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.25);
 }
 
 .project-gallery .card img {
-    width: 250px;
-    height: 200px;
-    justify-content: center;
-    border-radius: 10px;
+    max-width: 100%;
+    /* padding: 10px; */
+    /* border-radius: 15px; */
+    box-sizing: border-box;
 }
 
-.card-container .card img {
-    width: 200px;
-    height: 200px;
-    justify-content: center;
-    border-radius: 10px;
-}
-
-.project-gallery {
-    display: grid;
+.great-blog {
     margin-top: 2rem;
-    /* Buat 3 kolom yang sama besar */
-    /* grid-template-columns: repeat(3, 1fr); */
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 0px;
-    padding: 2px;
-    justify-items: center;
-    border-radius: 10px;
+}
+
+.great-blog h1 {
+    display: flex;
+    justify-content: center;
+    font-size: 56px;
+    font-weight: 700;
+    line-height: 1.2;
+    color: navy;
+    position: relative;
+}
+
+.tulisan {
+    /* margin: 5px; */
+    padding: 10px;
+}
+
+.title a {
+    text-decoration: none;
+    color: #3b5998;
+}
+
+.title a:hover {
+    text-decoration: underline;
+}
+
+.post-info {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+
+.card .post-info a {
+    padding: 5px;
+    color: #000;
+    text-decoration: none;
+}
+
+.card .post-info a:hover {
+    color: grey;
+}
+
+.card .post-info li {
+    font-size: small;
+}
+
+
+/* Tablet Styles: Terapkan 2 kolom jika lebar layar minimal 600px */
+
+@media (min-width: 600px) {
+    .project-gallery {
+        grid-template-columns: repeat(2, 1fr);
+        /* Ubah menjadi 2 kolom */
+    }
+}
+
+
+/* Desktop Styles: Terapkan 3 kolom jika lebar layar minimal 900px */
+
+@media (min-width: 900px) {
+    .project-gallery {
+        grid-template-columns: repeat(3, 1fr);
+        /* Ubah menjadi 3 kolom */
+    }
+}
+
+
+/* Terapkan jika lebar layar minimal 768px */
+
+@media (min-width: 768px) {
+    .header {
+        flex-direction: row;
+        /* Kembali ke baris horizontal */
+        justify-content: space-between;
+        /* Mendorong item ke ujung */
+    }
 }
